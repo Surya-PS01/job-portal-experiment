@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Portal</title>
+    <link rel="stylesheet" href="job.css">
+</head>
+
+<body>
+
+    <div class="topbar">
+        <div class="logo">Job Portal</div>
+        <div class="links">
+            <a href="#">Jobs</a>
+            <a href="#">Categories</a>
+            <a href="#">About</a>
+            <a href="#">Login</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <h1>Build Your Career with the Right Job</h1>
+        <p>Search jobs from companies and apply easily.</p>
+
+        <form class="search-box" onsubmit="return false;">
+            <input type="text" id="searchRole" placeholder="Job title">
+            <input type="text" id="searchLocation" placeholder="Location">
+            <input type="button" id="searchBtn" value="Search">
+        </form>
+    </div>
+
+    <div class="section">
+        <div class="content center-text">
+
+            <h2>Publish Job</h2>
+
+            <input type="text" id="company" placeholder="Company Name">
+            <input type="text" id="role" placeholder="Job Role">
+            <input type="text" id="location" placeholder="Location">
+            <input type="text" id="type" placeholder="Job Type">
+
+            <br><br>
+            <button id="publishBtn">Publish</button>
+
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="content center-text">
+
+            <h2>Job Categories</h2>
+
+            <div class="category-box">
+                <div class="category-item">IT & Software</div>
+                <div class="category-item">Engineering</div>
+                <div class="category-item">Hospitality</div>
+                <div class="category-item">Internships</div>
+                <div class="category-item">Marketing</div>
+                <div class="category-item">Finance</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="content">
+
+            <h2 class="center-text">Featured Jobs</h2>
+
+            <table>
+
+                <tr>
+                    <th>Company</th>
+                    <th>Role</th>
+                    <th>Location</th>
+                    <th>Type</th>
+                    <th>Actions</th>
+                </tr>
+
+                <tbody id="jobTable"></tbody>
+
+            </table>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2026 Job Portal | All Rights Reserved
+    </div>
+
+    <script src="job.js"></script>
+
+</body>
+</html>
